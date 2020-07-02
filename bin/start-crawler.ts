@@ -1,8 +1,9 @@
-const path = require('path');
+#!/usr/bin/env node
 
+import path from 'path';
 const argv = require('minimist')(process.argv.slice(2));
 const { configPath, loginUserName, loginPwd } = argv;
-const main = require('../src/index');
+import main from '../src/index';
 
 if(!configPath) {
     throw new Error("no configPath!");
@@ -14,6 +15,6 @@ if(!loginUserName) {
 
 if(!loginPwd) {
     throw new Error("no loginPwd!");
-}
-const config = require(path.resolve(__dirname, '..', configPath));
+};
+const config = require(process.cwd() +'/'+ configPath );
 main(config,loginUserName,loginPwd);

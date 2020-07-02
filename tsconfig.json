@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "lib": [
+            "es2017",
+            "es7",
+            "es6",
+            "dom"
+        ],
+        "strict": true,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "baseUrl": "./",
+        "outDir": "dist",
+        "typeRoots": [
+            "node_modules/@types"
+        ],
+        "esModuleInterop": true,
+        "declaration": true
+    },
+    "include": [
+        "src/**/*.ts",
+        "bin/**/*.ts"
+    ],
+    "exclude": [
+        "result",
+        "node_modules",
+        "dist"
+    ]
+}

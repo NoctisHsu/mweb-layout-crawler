@@ -1,7 +1,7 @@
-const puppeteer = require('puppeteer');
-const autoLogin = require('./auto-login');
-const seekPageComments = require('./seek-page-comments');
-const generateResult = require('./generate-result');
+import puppeteer from 'puppeteer';
+import autoLogin from './auto-login';
+import seekPageComments from './seek-page-comments';
+import generateResult from './generate-result';
 
 const main = async (config, loginUserName, loginPwd) => {
     console.log('crawler is launching...')
@@ -16,4 +16,4 @@ const main = async (config, loginUserName, loginPwd) => {
     generateResult(pageComments)
 }
 
-module.exports = main;
+export default main;

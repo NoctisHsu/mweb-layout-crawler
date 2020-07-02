@@ -10,5 +10,4 @@ const autoLogin = async (page, loginUserName, loginPwd) => {
     await page.waitForNavigation({ waitUntil: 'networkidle0' });
     console.log("auto login completed");
 }
-
-module.exports = autoLogin;
+export default autoLogin;

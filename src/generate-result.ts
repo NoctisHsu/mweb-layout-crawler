@@ -1,9 +1,7 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
 
 const generateResult = (pageComments) => {
-    const outputPath = require(path.resolve(__dirname));
-    var outputFilename = `${outputPath}/results-${Date.now()}.json`;
+    var outputFilename = `${process.cwd()}/results-${Date.now()}.json`;
     fs.writeFile(outputFilename, JSON.stringify(pageComments, null, 4), (err) => {
         if (err) {
             console.log(err);
@@ -13,4 +11,4 @@ const generateResult = (pageComments) => {
     });
 }
 
-module.exports = generateResult;
+export default generateResult;
