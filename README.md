@@ -1,5 +1,11 @@
 # mweb-layout-crawler
 
+## Install
+``` shell
+npm i -g mweb-layout-crawler
+```
+
+
 ## Usage
 ``` shell
 npx mweb-layout-crawler --configPath {config.json} --loginUserName {username} --loginPwd {password}
