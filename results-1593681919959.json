@@ -1,0 +1,16 @@
+[
+    [
+        {
+            "name": "商品頁",
+            "path": "/SalePage/Index/6326384",
+            "matchedArray": []
+        }
+    ],
+    [
+        {
+            "name": "會員專區首頁",
+            "path": "/V2/VipMember/VIPMemberRelay?shopId=123",
+            "matchedArray": []
+        }
+    ]
+]

@@ -1,0 +1,37 @@
+{
+  "name": "mweb-layout-crawler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "start-crawler": "bin/start-crawler.js"
+  },
+  "scripts": {
+    "start": "npx babel-node puppeteer/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoctisHsu/mweb-layout-crawler.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NoctisHsu/mweb-layout-crawler/issues"
+  },
+  "homepage": "https://github.com/NoctisHsu/mweb-layout-crawler#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "jspdf": "^1.5.3",
+    "jspdf-autotable": "^3.5.4",
+    "minimist": "^1.2.5",
+    "puppeteer": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/register": "^7.10.1",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
